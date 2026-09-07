@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata: not shown on the page, but used by the browser -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML — My First Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Semantic layout: header, nav, main, footer -->
+    <header>
+      <h1>Hello, HTML</h1>
+      <p>This page is a small tour of common HTML tags. Read the comments in the file as you go.</p>
+    </header>
+
+    <nav>
+      <!-- Links to other pages use a file path. Same-page links use an id. -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#text">Text</a>
+      <a href="#lists">Lists</a>
+      <a href="#images">Images</a>
+      <a href="#table">Table</a>
+      <a href="#form">Form</a>
+    </nav>
+
+    <main>
+      <section id="text">
+        <h2>Headings and text</h2>
+        <h3>This is an h3</h3>
+        <p>
+          A <mark>paragraph</mark> holds normal text. You can make words
+          <em>italic</em>, <strong>bold</strong>, or wrap a
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+            link
+          </a>
+          that opens MDN in a new tab.
+        </p>
+        <blockquote>
+          A blockquote is for a quoted passage.
+        </blockquote>
+        <p>Inline code looks like <code>&lt;p&gt;</code>.</p>
+      </section>
+
+      <section id="lists">
+        <h2>Lists</h2>
+        <p>Unordered list (bullets):</p>
+        <ul>
+          <li>HTML describes structure</li>
+          <li>CSS describes appearance</li>
+          <li>JavaScript describes behavior</li>
+        </ul>
+        <p>Ordered list (numbers):</p>
+        <ol>
+          <li>Open this file in a browser</li>
+          <li>Change some text</li>
+          <li>Save and refresh the page</li>
+        </ol>
+      </section>
+
+      <section id="media">
+        <h2>Images</h2>
+        <p>Always include <code>alt</code> text so screen readers (and broken images) still make sense.</p>
+        <img
+          src="https://picsum.photos/seed/learn-html/640/360"
+          width="640"
+          height="360"
+          alt="A placeholder landscape photo"
+        />
+      </section>
+
+      <section id="table">
+        <h2>A simple table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>What it does</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>&lt;h1&gt;</code></td>
+              <td>Main page heading</td>
+            </tr>
+            <tr>
+              <td><code>&lt;p&gt;</code></td>
+              <td>A paragraph of text</td>
+            </tr>
+            <tr>
+              <td><code>&lt;a&gt;</code></td>
+              <td>A hyperlink</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="form">
+        <h2>A simple form</h2>
+        <p>Forms collect input. This one does not send data anywhere — it just demonstrates the tags.</p>
+        <form>
+          <label>
+            Your name
+            <input type="text" name="name" placeholder="Ada Lovelace" />
+          </label>
+          <label>
+            Favorite topic
+            <select name="topic">
+              <option>Headings</option>
+              <option>Links</option>
+              <option>Forms</option>
+            </select>
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="What did you learn today?"></textarea>
+          </label>
+          <button type="button">This button does nothing yet</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Try editing this file, then refresh the browser to see your changes.</p>
+    </footer>
+  </body>
+</html>
